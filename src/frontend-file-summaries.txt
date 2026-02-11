@@ -1,0 +1,10 @@
+{
+  "frontend/src/App.tsx": "Main single-page apology site component with mobile-responsive header (scaled typography and padding), teddy animation section, and apology letter card layout with romantic gradient background.",
+  "frontend/src/components/TeddyAnimation.tsx": "Animated teddy bear component with mobile-optimized sizing (240px on mobile, scaling up on larger screens) and floating heart decorations constrained within overflow-hidden container to prevent horizontal scrolling.",
+  "frontend/src/components/ApologyLetterCard.tsx": "Letter card component with mobile-responsive typography, decorative hearts, and a new footer section containing an English message and a button that opens an in-page video player modal when clicked.",
+  "frontend/src/content/apologyLetter.ts": "Exported constant containing the complete apology letter text exactly as provided, preserving all formatting, emojis, and Hinglish content.",
+  "frontend/src/index.css": "Global styles with romantic OKLCH color palette, mobile-optimized overflow handling (overflow-x: hidden on html/body), performant animations using will-change, and comprehensive prefers-reduced-motion support that disables all animations.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color utilities, custom border radius, serif font family for headers, and enhanced shadows.",
+  "frontend/index.html": "HTML entry point with updated title for Radhika, Inter font import for clean typography, and proper mobile viewport settings.",
+  "frontend/src/components/LoveVideoPlayer.tsx": "Modal video player component that displays the local kiss.mp4 video in a responsive dialog overlay with autoplay, controls, and a close button styled to match the romantic theme."
+}

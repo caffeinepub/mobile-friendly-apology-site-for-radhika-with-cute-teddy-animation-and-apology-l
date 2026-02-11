@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Website to apologize to girlfriend Radhika, featuring a cute teddy animation and a provided apology letter, optimized for mobile and with no footer credit.",
+  "architectural_notes": [
+    "Responsive/mobile-first layout required.",
+    "Do not display any footer credit (no attribution).",
+    "Add a call-to-action button at the end/footer area after the letter text ('mai gussa nhi hu'); clicking it should trigger playback of the provided/attached video."
+  ],
+  "known_issues": [
+    "Teddy image currently needs transparent background (remove background / ensure PNG transparency).",
+    "Text appears too small and not bold enough; needs increased size and bold styling."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-apology-website-addressed-to-radhika-that-presents-a-romantic-heartfelt-apology-experience-suitable-for-sending-as-a-link",
+      "title": "Create a single-page apology website addressed to “Radhika” that presents a romantic, heartfelt apology experience suitable for sending as a link.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-cute-teddy-animation-on-the-page-lightweight-and-performant-on-mobile-displayed-prominently-near-the-top-of-the-page",
+      "title": "Add a cute teddy animation on the page (lightweight and performant on mobile), displayed prominently near the top of the page.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-provided-apology-letter-text-on-the-page-exactly-as-provided-by-the-user-including-line-breaks-slang-hinglish-and-emojis-in-a-readable-letter-style-container",
+      "title": "Render the provided apology letter text on the page exactly as provided by the user (including line breaks, slang/Hinglish, and emojis) in a readable letter-style container.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-entire-site-is-fully-mobile-compatible-and-responsive-layout-typography-spacing-and-animation-scaling",
+      "title": "Ensure the entire site is fully mobile-compatible and responsive (layout, typography, spacing, and animation scaling).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-do-not-show-any-footer-credit-or-built-by-branding-anywhere-in-the-ui",
+      "title": "Do not show any footer credit or “built by” branding anywhere in the UI.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-cute-romantic-visual-theme-colors-typography-and-layout-consistently-across-the-page-using-a-warm-pastel-palette-avoid-blue-purple-as-dominant-colors",
+      "title": "Apply a coherent, cute romantic visual theme (colors, typography, and layout) consistently across the page, using a warm pastel palette (avoid blue/purple as dominant colors).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-generated-image-assets-into-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-do-not-fetch-images-through-the-backend",
+      "title": "Add required generated image assets into frontend/public/assets/generated and reference them directly from the frontend (do not fetch images through the backend).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-teddy-illustration-to-use-a-png-with-a-fully-transparent-background-no-white-solid-box-behind-the-teddy-and-ensure-the-teddy-displayed-in-the-teddyanimation-component-uses-the-updated-transparent-asset",
+      "title": "Update the teddy illustration to use a PNG with a fully transparent background (no white/solid box behind the teddy), and ensure the teddy displayed in the TeddyAnimation component uses the updated transparent asset.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-size-of-the-apology-letter-text-and-make-it-bold-or-at-least-clearly-boldened-compared-to-current-for-improved-readability-across-mobile-and-desktop",
+      "title": "Increase the size of the apology letter text and make it bold (or at least clearly boldened compared to current) for improved readability across mobile and desktop.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-entire-single-page-apology-site-fully-mobile-compatible-by-auditing-and-fixing-any-remaining-responsive-layout-typography-spacing-and-animation-scaling-issues-so-it-renders-cleanly-on-small-screens",
+      "title": "Make the entire single-page apology site fully mobile-compatible by auditing and fixing any remaining responsive layout, typography, spacing, and animation scaling issues so it renders cleanly on small screens.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-footer-section-directly-after-the-apology-letter-content-after-the-current-closing-signature-area-that-includes-a-short-line-telling-radhika-that-you-are-not-angry-and-asking-her-to-click-the-button",
+      "title": "Add a footer section directly after the apology letter content (after the current closing/signature area) that includes a short line telling Radhika that you are not angry and asking her to click the button.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-prominent-button-in-that-footer-section-when-clicked-it-must-play-the-provided-attached-video-served-as-a-local-static-asset-from-the-frontend-without-navigating-away-from-the-page",
+      "title": "Add a prominent button in that footer section; when clicked, it must play the provided/attached video (served as a local static asset from the frontend) without navigating away from the page.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-new-footer-message-button-video-player-styling-matches-the-existing-cute-romantic-theme-warm-pastel-palette-and-does-not-introduce-any-built-by-credit-or-branding",
+      "title": "Ensure the new footer message + button + video player styling matches the existing cute romantic theme (warm pastel palette) and does not introduce any 'built by' credit or branding.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create an apology website addressed to Radhika",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a cute teddy animation to the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Include the provided apology letter text on the page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Ensure mobile-friendly responsive layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Remove/avoid any footer credit on the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Use a PNG teddy image with background removed (transparent)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Increase text size and make text bold for better readability",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add a footer button after the letter ('mai gussa nhi hu') that prompts Radhika to click; on click, play the attached video",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Mobile-friendly apology site for Radhika with cute teddy animation and apology letter",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add end-of-letter footer CTA and in-page video playback",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "summary": "Add a responsive footer section after the letter sign-off with an English message prompting Radhika to click the button.",
+      "acceptanceCriteria": [
+        "A new footer area is visible at the end of the letter card (below the existing 'Forever Yours 💕' sign-off).",
+        "The footer displays user-facing text in English (e.g., 'I'm not angry. Click the button below.').",
+        "The footer content is responsive and looks correct on mobile and desktop without causing overflow or layout shifts."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ApologyLetterCard.tsx",
+          "operation": "modify",
+          "description": "Add a new footer section directly after the existing sign-off area, containing a short English reassurance line and a prompt to click the button; ensure layout remains responsive (no overflow) using existing Tailwind theme utilities."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Add a prominent footer button that opens an in-page video player and plays a local static MP4 without navigating away.",
+      "acceptanceCriteria": [
+        "A button is displayed in the new footer section and is clearly tappable on mobile.",
+        "Clicking/tapping the button opens an in-page video player (modal/dialog or inline) and starts playback (or shows controls with autoplay attempt).",
+        "The video file is loaded from the frontend as a static asset (not fetched through the backend).",
+        "User can pause/close the video player and return to the letter view without a page reload."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/kiss.mp4",
+          "operation": "create",
+          "description": "Add the provided video as a static frontend asset so it can be loaded locally by the UI video player (no backend involvement)."
+        },
+        {
+          "path": "frontend/src/components/LoveVideoPlayer.tsx",
+          "operation": "create",
+          "description": "Create a reusable in-page video player component (modal/dialog-style or inline overlay) that renders an HTML5 video element pointing to the local static asset, attempts autoplay on open (with controls available), and provides a close action to return to the letter view without navigation."
+        },
+        {
+          "path": "frontend/src/components/ApologyLetterCard.tsx",
+          "operation": "modify",
+          "description": "Add a prominent button within the new footer; manage open/close state for the in-page video player and render LoveVideoPlayer when activated; ensure click does not navigate and video source references the local static asset under frontend/public."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Style the new footer message, button, and video player to match the existing warm pastel romantic theme without adding any credits/branding.",
+      "acceptanceCriteria": [
+        "The new UI elements visually match the existing theme (colors/typography/rounded corners/shadows).",
+        "No footer credit or 'built by' branding is added.",
+        "All new elements meet existing responsiveness expectations (usable on small screens)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ApologyLetterCard.tsx",
+          "operation": "modify",
+          "description": "Apply theme-consistent styling to the new footer message and button (pastel gradient/romantic palette, rounded corners, soft shadows) using existing Tailwind utilities and current typography conventions; ensure no added credits/branding text."
+        },
+        {
+          "path": "frontend/src/components/LoveVideoPlayer.tsx",
+          "operation": "modify",
+          "description": "Style the in-page player container/overlay to match the existing cute romantic look (soft backdrop, rounded card, consistent shadows/typography) and make it responsive (fit within viewport on mobile; prevent overflow)."
+        }
+      ]
+    }
+  ]
+}

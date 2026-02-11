@@ -1,0 +1,86 @@
+{
+  "kind": "build_request",
+  "title": "Add footer button after the letter that plays a video on click",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "text": "Add a footer section directly after the apology letter content (after the current closing/signature area) that includes a short line telling Radhika that you are not angry and asking her to click the button.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add a button on footer after ending the letter mai gussa nhi hu and told her to click on this and when she click on it play the attached video"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new footer area is visible at the end of the letter card (below the existing 'Forever Yours 💕' sign-off).",
+        "The footer displays user-facing text in English (e.g., 'I'm not angry. Click the button below.').",
+        "The footer content is responsive and looks correct on mobile and desktop without causing overflow or layout shifts."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add a prominent button in that footer section; when clicked, it must play the provided/attached video (served as a local static asset from the frontend) without navigating away from the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "when she click on it play the attached video"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A button is displayed in the new footer section and is clearly tappable on mobile.",
+        "Clicking/tapping the button opens an in-page video player (modal/dialog or inline) and starts playback (or shows controls with autoplay attempt).",
+        "The video file is loaded from the frontend as a static asset (not fetched through the backend).",
+        "User can pause/close the video player and return to the letter view without a page reload."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Ensure the new footer message + button + video player styling matches the existing cute romantic theme (warm pastel palette) and does not introduce any 'built by' credit or branding.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add a button on footer..."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The new UI elements visually match the existing theme (colors/typography/rounded corners/shadows).",
+        "No footer credit or 'built by' branding is added.",
+        "All new elements meet existing responsiveness expectations (usable on small screens)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/components/ui (compose them instead).",
+    "Do not edit any paths listed in frontend.immutablePaths.",
+    "Keep backend as a single Motoko actor; no backend changes are required for playing a static video."
+  ],
+  "nonGoals": [
+    "Adding backend upload/storage/streaming for videos.",
+    "Adding authentication-gated access to the video.",
+    "Adding third-party video hosting or external embeds."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

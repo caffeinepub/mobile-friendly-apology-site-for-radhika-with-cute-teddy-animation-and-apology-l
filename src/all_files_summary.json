@@ -1,0 +1,18 @@
+{
+  "backend/main.mo": "Minimal Motoko canister actor with no methods.",
+  "feature_evidence.json": "Feature evidence report mapping three UI features to affected frontend files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing all major frontend files and their functionality.",
+  "frontend/index.css": "Tailwind base and theme variables defining a pastel romantic color palette and global styling.",
+  "frontend/index.html": "HTML entry point loading fonts, metadata, and mounting the React app.",
+  "frontend/src/App.tsx": "Main app layout showing header, teddy animation, and the apology letter card.",
+  "frontend/src/components/ApologyLetterCard.tsx": "Letter card with decorative hearts, message content, a footer prompt, and a button opening the video modal.",
+  "frontend/src/components/LoveVideoPlayer.tsx": "Modal video player component showing the local kiss.mp4 video with close controls.",
+  "frontend/src/components/TeddyAnimation.tsx": "Teddy bear illustration with floating heart animations sized responsively.",
+  "frontend/src/content/apologyLetter.ts": "Exports a long apology letter string with emotive Hinglish text.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and refreshes a backend actor instance based on Internet Identity state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and provider for managing Internet Identity authentication using AuthClient, including login, logout, state, and identity persistence.",
+  "frontend/src/index.css": "Defines global Tailwind styles, pastel theme variables, dark mode colors, custom utilities, and animations for the romantic visual theme.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and the InternetIdentityProvider before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors tied to CSS variables, extended theming, animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Describes the project’s feature requirements, design constraints, known issues, and overall state for a romantic apology website."
+}

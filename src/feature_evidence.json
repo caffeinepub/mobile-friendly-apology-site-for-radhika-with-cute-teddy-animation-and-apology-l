@@ -1,0 +1,61 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-footer-section-directly-after-the-apology-letter-content-after-the-current-closing-signature-area-that-includes-a-short-line-telling-radhika-that-you-are-not-angry-and-asking-her-to-click-the-button",
+      "featureTitle": "Add a footer section directly after the apology letter content (after the current closing/signature area) that includes a short line telling Radhika that you are not angry and asking her to click the button.",
+      "files": [
+        "frontend/src/components/ApologyLetterCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-prominent-button-in-that-footer-section-when-clicked-it-must-play-the-provided-attached-video-served-as-a-local-static-asset-from-the-frontend-without-navigating-away-from-the-page",
+      "featureTitle": "Add a prominent button in that footer section; when clicked, it must play the provided/attached video (served as a local static asset from the frontend) without navigating away from the page.",
+      "files": [
+        "frontend/src/components/ApologyLetterCard.tsx",
+        "frontend/src/components/LoveVideoPlayer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-new-footer-message-button-video-player-styling-matches-the-existing-cute-romantic-theme-warm-pastel-palette-and-does-not-introduce-any-built-by-credit-or-branding",
+      "featureTitle": "Ensure the new footer message + button + video player styling matches the existing cute romantic theme (warm pastel palette) and does not introduce any 'built by' credit or branding.",
+      "files": [
+        "frontend/src/components/ApologyLetterCard.tsx",
+        "frontend/src/components/LoveVideoPlayer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
